@@ -145,10 +145,12 @@ body.dark-mode p {
     text-decoration: none;
 }
 
-#h1 {
-    grid-area: h1;
+
+h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #p {
     grid-area: p;
 }
+
