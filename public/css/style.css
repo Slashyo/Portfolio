@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 /* Définition de la mise en page GRID pour le MENU / DARKMODE */
 
@@ -16,7 +16,7 @@
 
 body {
     transition: background-color 0.3s ease;
-    background-color: #fcf260;
+    background-color: #f1ec98;
 }
   
 body.light-mode {
@@ -24,7 +24,7 @@ body.light-mode {
 }
   
 body.dark-mode {
-    background-color: #515964;
+    background-color: #3d434b;
 }
 
 body.dark-mode img.open-icon {
@@ -55,8 +55,8 @@ body.dark-mode p {
 #mode-switch.dark-mode {
     grid-area: darkMode;
     position: fixed;
-    top: 25px;
-    right: 25px;
+    top: 20px;
+    right: 30px;
     cursor: pointer;
     background-image: url('../img/moon_stars_night_midnight_sky_icon_194278.png');
 }
@@ -64,8 +64,8 @@ body.dark-mode p {
 #mode-switch.light-mode {
     grid-area: darkMode;
     position: fixed;
-    top: 25px;
-    right: 25px;
+    top: 20px;
+    right: 30px;
     cursor: pointer;
     background-image: url('../img/astronomy_solar_galaxy_sun_space_star_universe_icon_156878.png');
 }
@@ -78,7 +78,7 @@ body.dark-mode p {
     grid-area: menuNav;
     position: fixed;
     top: 25px;
-    left: 25px;
+    left: 30px;
     cursor: pointer;
     z-index: 9999;
 }
@@ -140,7 +140,7 @@ body.dark-mode p {
   
 .menu ul li a {
     color: #fff;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Roboto Mono', monospace;
     font-size: 24px;
     text-decoration: none;
 }
@@ -148,6 +148,7 @@ body.dark-mode p {
 
 h1 {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
 
 #p {
