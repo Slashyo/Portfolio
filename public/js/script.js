@@ -22,15 +22,19 @@ modeSwitch.addEventListener('click', function() {
 /* Fonction pour le MENU */
 
 menuToggle.addEventListener('click', function() {
-  menu.classList.toggle('show');
-  menuToggle.classList.toggle('open');
+    menu.classList.toggle('show');
+    menuToggle.classList.toggle('open');
+    menu.classList.contains('show');
 });
-
+  
+  
 if (menuClose) {
   menuClose.addEventListener('click', function() {
     menu.classList.remove('show');
     menuToggle.classList.remove('open');
   });
 }
+
+
 
   
