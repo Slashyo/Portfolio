@@ -75,6 +75,7 @@ body.dark-mode p {
 
   
 .menu-toggle {
+    
     grid-area: menuNav;
     position: fixed;
     top: 25px;
@@ -91,12 +92,12 @@ body.dark-mode p {
 }
   
 .menu-toggle .close-icon {
-    animation: icon-rotate-out 0.7s ease-in-out forwards;
+    animation: icon-rotate-exterieur 0.7s ease-in-out forwards;
     display: none;
 }
 
 .menu-toggle .open-icon {
-    animation: icon-rotate-in 0.7s ease forwards;
+    animation: icon-rotate-interieur 0.7s ease forwards;
 }
   
 .menu-toggle.open .open-icon {
@@ -107,16 +108,16 @@ body.dark-mode p {
     display: block;
 }
 
-@keyframes icon-rotate-in {
+@keyframes icon-rotate-interieur {
     from {
-      transform: rotate(180deg);
+      transform: rotate(360deg);
     }
     to {
       transform: rotate(0deg);
     }
   }
   
-  @keyframes icon-rotate-out {
+  @keyframes icon-rotate-exterieur {
     from {
       transform: rotate(0deg);
     }
@@ -177,15 +178,70 @@ h1 {
     grid-area: p;
 }
 
+/* Curseur sur toute la page */
+
 html,body {
-    cursor: none;
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" style="font-size:40px"><text y="40">🐭</text></svg>'), auto !important;
   }
 
   .menu-toggle,
   a {
-    cursor: none;
+    cursor: pointer;
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" style="font-size:40px"><text y="40">🔍</text></svg>'), auto !important;
   }
 
+/* RESPONSIVE POUR L'ENSEMBLE DE LA PAGE */ 
+
+@media screen and (min-width: 768px) {
+    #gridmenu {
+        display: grid;
+        grid-template-columns: 1fr 100px;
+        grid-template-rows: 110px;
+        grid-template-areas: 
+                "menuNav darkMode"
+        ;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+  
+    .menu {
+        grid-area: menuNav;
+        height: 110px;
+        transform: none;
+        top: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+  
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+  
+    .menu ul li {
+        margin: 20px;
+    }
+  
+    .menu ul li a {
+        font-family: 'Roboto Mono', monospace;
+        color: #fff;
+        font-size: 22px;
+    }
+
+    #mode-switch.dark-mode {
+        grid-area: darkMode;
+        align-self: flex-end;
+    }
+
+    #mode-switch.light-mode {
+        grid-area: darkMode;
+        align-self: flex-end;
+    }
+  }
 
