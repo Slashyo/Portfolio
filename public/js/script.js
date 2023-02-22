@@ -22,12 +22,10 @@ modeSwitch.addEventListener('click', function() {
 /* Fonction pour le MENU */
 
 menuToggle.addEventListener('click', function() {
-    menu.classList.toggle('show');
-    menuToggle.classList.toggle('open');
-    menu.classList.contains('show');
+  menu.classList.toggle('show');
+  menuToggle.classList.toggle('open');
 });
-  
-  
+
 if (menuClose) {
   menuClose.addEventListener('click', function() {
     menu.classList.remove('show');
