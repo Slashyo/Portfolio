@@ -12,5 +12,9 @@
     <?php
 include 'include/menuDarkMode.php';
     ?>
+
+    <?php
+include 'include/footer.php'
+    ?>
 </body>
 </html>
