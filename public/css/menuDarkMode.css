@@ -183,21 +183,26 @@ h1 {
 }
 
 footer {
-    line-height: 100px;
-    height: 100px;
+    height: 70px;
+    line-height: 70px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
     position: fixed;
     left: 0;
     bottom: 0;
     text-align: center;
 }
 
+footer p {
+    color: #fff;
+}
+
 /* Curseur sur toute la page */
 
 html,body {
+    /* CURSEUR POUR L'ENSEMBLE DE LA PAGE
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" style="font-size:40px"><text y="40">🐭</text></svg>'), auto !important;
+    */
   }
 
   .menu-toggle,
