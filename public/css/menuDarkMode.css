@@ -174,12 +174,27 @@ body.dark-mode footer {
 
 
 h1 {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(3rem, 6vw, 10rem);
+    color: rgba(0, 0, 0, 0.8);
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+  
+h1:hover {
+    color: rgb(200, 200, 200);
 }
 
 #p {
     grid-area: p;
+}
+
+#photoHome {
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: auto;
 }
 
 footer {
@@ -262,6 +277,13 @@ html,body {
         top: 17px;
         grid-column: 2/3;
         align-self: flex-end;
+    }
+
+    #photoHome {
+        display: none;
+        margin: auto;
+        width: 75%;
+        height: 75%;
     }
   }
 
