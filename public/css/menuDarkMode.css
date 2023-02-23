@@ -16,7 +16,7 @@
 
 body {
     transition: background-color 0.3s ease;
-    background-color: #f1ec98;
+    background-color: rgb(235, 235, 235);
 }
   
 body.light-mode {
@@ -178,6 +178,11 @@ h1 {
     grid-area: p;
 }
 
+footer {
+    bottom: 0;
+    text-align: center;
+}
+
 /* Curseur sur toute la page */
 
 html,body {
@@ -198,7 +203,7 @@ html,body {
         grid-template-columns: 1fr 100px;
         grid-template-rows: 110px;
         grid-template-areas: 
-                "menuNav darkMode"
+            "menuNav darkMode" 
         ;
     }
 
@@ -210,9 +215,6 @@ html,body {
         grid-area: menuNav;
         height: 110px;
         transform: none;
-        top: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
     }
   
     .menu ul {
@@ -229,18 +231,20 @@ html,body {
     }
   
     .menu ul li a {
-        font-family: 'Roboto Mono', monospace;
-        color: #fff;
         font-size: 22px;
     }
 
     #mode-switch.dark-mode {
         grid-area: darkMode;
+        top: 17px;
+        grid-column: 2/3;
         align-self: flex-end;
     }
 
     #mode-switch.light-mode {
         grid-area: darkMode;
+        top: 17px;
+        grid-column: 2/3;
         align-self: flex-end;
     }
   }
