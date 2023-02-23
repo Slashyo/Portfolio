@@ -42,6 +42,10 @@ body.dark-mode h2 {
 body.dark-mode p {
     color: white;
 }
+
+body.dark-mode footer {
+    color: #fff;
+}
   
 #mode-switch {
     width: 75px;
@@ -179,6 +183,13 @@ h1 {
 }
 
 footer {
+    line-height: 100px;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: fixed;
+    left: 0;
     bottom: 0;
     text-align: center;
 }
