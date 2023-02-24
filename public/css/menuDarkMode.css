@@ -52,17 +52,20 @@ body.dark-mode footer {
 }
   
 #mode-switch {
+    justify-self: right;
+    align-self: center;
     width: 75px;
     height: 75px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 100;
     transition: background-image 0.7s ease;
 }
   
 #mode-switch.dark-mode {
     grid-area: darkMode;
-    position: fixed;
+
     top: 20px;
     right: 30px;
     cursor: pointer;
@@ -71,7 +74,7 @@ body.dark-mode footer {
   
 #mode-switch.light-mode {
     grid-area: darkMode;
-    position: fixed;
+
     top: 20px;
     right: 30px;
     cursor: pointer;
@@ -83,13 +86,12 @@ body.dark-mode footer {
 
   
 .menu-toggle {
-    
+    position: absolute;
     grid-area: menuNav;
-    position: fixed;
+    z-index: 100;
     top: 25px;
-    left: 30px;
+    left: 20px;
     cursor: pointer;
-    z-index: 9999;
 }
   
 .menu-toggle img {
@@ -265,7 +267,6 @@ html,body {
 /* RESPONSIVE POUR L'ENSEMBLE DE LA PAGE */ 
 
 @media screen and (min-width: 768px) {
-    
 
     .menu-toggle {
         display: none;
@@ -294,6 +295,9 @@ html,body {
         font-size: 22px;
     }
 
+    #mode-switch {
+    z-index: 0;
+    }
     #mode-switch.dark-mode {
         
         top: 17px;

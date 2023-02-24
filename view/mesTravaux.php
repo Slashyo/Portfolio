@@ -9,6 +9,7 @@
     <title>Mes Travaux</title>
 </head>
 <body>
+<div id="gridmenu">
     <?php
 include 'include/menuDarkMode.php';
     ?>
@@ -16,5 +17,6 @@ include 'include/menuDarkMode.php';
     <?php
 include 'include/footer.php'
     ?>
+</div>
 </body>
 </html>
