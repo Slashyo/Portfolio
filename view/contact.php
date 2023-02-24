@@ -13,8 +13,6 @@
 include 'include/menuDarkMode.php';
     ?>
 
-
-
     <?php
 include 'include/footer.php'
     ?>

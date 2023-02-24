@@ -1,12 +1,11 @@
-<div id="gridmenu">
-
-
 <!-- MENU DE NAVIGATION -->
 
 <nav>
     <div class="menu-toggle">
         <img class="open-icon" src="img/icons8-menu-rounded-100.png" alt="Menu">
-        <img class="close-icon" src="img/icons8-multiplier-96.png" alt="Close">
+
+        <!-- COPYRIGHT Anas Mannaa -->
+        <img class="close-icon" src="img/fermer.png" alt="Close">
     </div>
               
 <div class="menu">
@@ -23,5 +22,3 @@
 
 <!-- "BOUTON" DARK MODE -->
 <a href="#" id="mode-switch" class="dark-mode"></a>
-
-</div>

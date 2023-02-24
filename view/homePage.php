@@ -9,14 +9,27 @@
     <title>Accueil</title>
 </head>
 <body>
+<div id="gridmenu">
     <?php
 include 'include/menuDarkMode.php';
     ?>
+<div id="tomBik">
     <h1 data-value="TOM BIK">TOM BIK</h1>
-    <img id="photoHome" src="img/kisspng-web-development-web-developer-web-design-web-development-5afd66934ea449.9607081515265563073221.png" width="90%" height="auto" alt="">
-    <h1 data-value="WEB DEV">WEB DEVELOPPEUR</h1>
+    <img id="photoHome" src="img/kisspng-web-development-web-developer-web-design-web-development-5afd66934ea449.9607081515265563073221.png" alt="">
+    <h1>WEB DEVELOPER</h1>
+</div>
+
+    <div id="childBlock">
+    <h2>HEHEHEHE</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque labore minima debitis enim vitae, voluptas dicta ab aperiam rem! Et.</p>
+    </div>
+    <div id="childBlock1">
+    <h2>HEHEHEHE</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, mollitia ratione fugiat esse similique voluptatum! Dolorem error unde vero perferendis!</p>
+    </div>
     <?php
 include 'include/footer.php'
     ?>
+</div>
 </body>
 </html>
