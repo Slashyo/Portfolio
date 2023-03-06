@@ -21,11 +21,11 @@ include 'include/menuDarkMode.php';
 
 <div id="childBlock">
     <h2>HEHEHEHE</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, hic. Dolorem debitis, reiciendis ad laborum quasi natus recusandae et distinctio maiores quam alias, vitae tempora molestias impedit adipisci voluptates unde deserunt earum fugit nam eius. Alias deserunt quam ducimus obcaecati facilis repudiandae odio atque praesentium! Quia natus harum quis atque dolorem eveniet est porro accusamus non, corrupti fugiat molestias saepe eius ipsum sequi esse pariatur! Suscipit minima consequatur nesciunt eligendi perspiciatis repellendus architecto libero expedita, obcaecati tempora excepturi ut nam hic, corporis reprehenderit, dignissimos earum? Vel deserunt, dignissimos doloribus, consequuntur accusamus velit distinctio, ex consequatur alias placeat magnam amet. Quod.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, voluptatem ea voluptates, sit exercitationem voluptas ab nesciunt sapiente molestias ipsum quaerat, fugit nihil repellat asperiores alias. Necessitatibus, maiores eius? Mollitia ipsam ducimus, commodi quo quae, quasi doloremque et ab, provident ratione corrupti explicabo quas quia excepturi quos in quidem. Rerum!</p>
 </div>
 <div id="childBlock1">
     <h2>HEHEHEHE</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eius veritatis odio cupiditate repellendus soluta, ea exercitationem doloribus nemo! Distinctio, possimus totam recusandae facilis nostrum sequi suscipit eos alias illo delectus iusto quas porro dolor reprehenderit aut velit maiores maxime perspiciatis molestias numquam necessitatibus. Eaque praesentium ea corrupti, eveniet fugit exercitationem dicta facilis sunt aliquid officia ullam excepturi. Vitae necessitatibus quisquam obcaecati modi illo, nesciunt, aliquam minima vero dolorum exercitationem iure! Repellat culpa cum consectetur, at quidem quasi, enim similique optio dignissimos explicabo deserunt reiciendis quibusdam dolorem consequuntur nemo, maiores dicta velit? Cumque optio cum quas, aliquid accusantium libero reprehenderit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dignissimos iure soluta. Voluptas tempore esse repellendus quis, non, aliquid sequi est obcaecati minus, saepe quam sunt recusandae architecto amet possimus pariatur eaque. Exercitationem doloremque, expedita necessitatibus, quasi ut cupiditate dolorum inventore sed id nihil corrupti ducimus vero, obcaecati in ullam.</p>
 </div>
     <?php
 include 'include/footer.php'
