@@ -6,9 +6,10 @@
 #gridmenu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px repeat(3, auto);
+    grid-template-rows: 100px repeat(4, auto);
     grid-template-areas: 
             "menuNav darkMode"
+            "titre titre"
             "tomBik tomBik"
             "blockHome blockHome1"
             "footer footer"
@@ -31,6 +32,31 @@ body.dark-mode {
     background-color: #3d434b;
 }
 
+/* DARK MODE POUR FORMULAIRE */
+
+body.dark-mode form {
+    border: 1px solid #2d3035;
+    box-shadow: 0 0 10px #646d79;
+    background-color: #3d434b;
+    color: #fff;
+}
+
+body.dark-mode form textarea {
+    background-color: #646d79;
+}
+
+body.dark-mode form input#email {
+    background-color: #646d79;
+}
+
+body.dark-mode form input#nom {
+    background-color: #646d79;
+}
+
+body.dark-mode form ::placeholder {
+    color: #fff;
+}
+ 
 body.dark-mode img.open-icon {
     color: #fff;
 }
@@ -40,6 +66,10 @@ body.dark-mode h1 {
 }
 
 body.dark-mode h2 {
+    color: white;
+}
+
+body.dark-mode h3 {
     color: white;
 }
   
@@ -194,6 +224,13 @@ h1:hover {
     color: rgb(200, 200, 200);
 }
 
+h3 {
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: xx-large;
+    grid-area: titre;
+}
+
 #photoHome {
     display: block;
     margin: auto;
@@ -262,7 +299,40 @@ html,body {
   a {
     cursor: pointer;
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" style="font-size:40px"><text y="40">🔍</text></svg>'), auto !important;
-  }
+}
+
+/* STYLE POUR LA PAGE CONTACT */
+
+form {
+    grid-area: tomBik;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 100%;
+    background-color: rgb(235, 235, 235);
+}
+input[type="text"], textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Roboto Mono', monospace;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 /* RESPONSIVE POUR L'ENSEMBLE DE LA PAGE */ 
 
