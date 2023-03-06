@@ -42,6 +42,7 @@ body.dark-mode form {
 }
 
 body.dark-mode form textarea {
+    border: #2d3035;
     background-color: #646d79;
 }
 
@@ -55,6 +56,14 @@ body.dark-mode form input#nom {
 
 body.dark-mode form ::placeholder {
     color: #fff;
+}
+
+body.dark-mode form input[type="text"], textarea {
+    border: #2d3035;
+}
+
+body.dark-mode form input[type="submit"] {
+    background-color: red;
 }
  
 body.dark-mode img.open-icon {
@@ -224,6 +233,10 @@ h1:hover {
     color: rgb(200, 200, 200);
 }
 
+h2 {
+    text-align: center;
+}
+
 h3 {
     text-align: center;
     font-family: 'Space Mono', monospace;
@@ -308,14 +321,20 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px #ccc;
     font-family: 'Roboto Mono', monospace;
     max-width: 100%;
+
     background-color: rgb(235, 235, 235);
 }
+
+textarea{
+    height: 100px;
+}
+
 input[type="text"], textarea {
     padding: 10px;
     margin: 10px 0;

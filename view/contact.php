@@ -13,7 +13,7 @@
     <?php
 include 'include/menuDarkMode.php';
     ?>
-    <h3>Contactez moi</h3>
+    <h3>CONTACTEZ MOI</h3>
 <form action="#" method="POST">
 		<label for="nom">Nom</label>
 		<input type="text" id="nom" name="nom" placeholder="Votre nom" required>
@@ -26,6 +26,14 @@ include 'include/menuDarkMode.php';
 
 		<input type="submit" value="Envoyer">
 </form>
+<div id="childBlock">
+    <h2>HEHEHEHE</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque labore minima debitis enim vitae, voluptas dicta ab aperiam rem! Et.</p>
+    </div>
+<div id="childBlock1">
+    <h2>HEHEHEHE</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, mollitia ratione fugiat esse similique voluptatum! Dolorem error unde vero perferendis!</p>
+</div>
     <?php
 include 'include/footer.php'
     ?>
