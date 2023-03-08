@@ -20,12 +20,12 @@ include 'include/menuDarkMode.php';
 </div>
 
 <div id="childBlock">
-    <h2>HEHEHEHE</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, voluptatem ea voluptates, sit exercitationem voluptas ab nesciunt sapiente molestias ipsum quaerat, fugit nihil repellat asperiores alias. Necessitatibus, maiores eius? Mollitia ipsam ducimus, commodi quo quae, quasi doloremque et ab, provident ratione corrupti explicabo quas quia excepturi quos in quidem. Rerum!</p>
+    <h2>popopo</h2>
+    <p>Bonjour moi c'est Alexandra et j'aime les chats</p>
 </div>
 <div id="childBlock1">
-    <h2>HEHEHEHE</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dignissimos iure soluta. Voluptas tempore esse repellendus quis, non, aliquid sequi est obcaecati minus, saepe quam sunt recusandae architecto amet possimus pariatur eaque. Exercitationem doloremque, expedita necessitatibus, quasi ut cupiditate dolorum inventore sed id nihil corrupti ducimus vero, obcaecati in ullam.</p>
+    <h2>popopo</h2>
+    <p>Bonjour moi c'est Alexandra et j'aime les chats</p>
 </div>
     <?php
 include 'include/footer.php'

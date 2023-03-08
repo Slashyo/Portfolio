@@ -29,7 +29,7 @@ body.light-mode {
 }
   
 body.dark-mode {
-    background-color: #3d434b;
+    background-color: #24272a;
 }
 
 /* DARK MODE POUR FORMULAIRE */
@@ -42,15 +42,18 @@ body.dark-mode form {
 }
 
 body.dark-mode form textarea {
+    color: #fff;
     border: #2d3035;
     background-color: #646d79;
 }
 
 body.dark-mode form input#email {
+    color: #fff;
     background-color: #646d79;
 }
 
 body.dark-mode form input#nom {
+    color: #fff;
     background-color: #646d79;
 }
 
@@ -60,10 +63,6 @@ body.dark-mode form ::placeholder {
 
 body.dark-mode form input[type="text"], textarea {
     border: #2d3035;
-}
-
-body.dark-mode form input[type="submit"] {
-    background-color: red;
 }
  
 body.dark-mode img.open-icon {
@@ -246,6 +245,14 @@ h3 {
     margin: auto;
 }
 
+p {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    top: 0;
+}
+
+
 #photoHome {
     display: block;
     margin: auto;
@@ -260,28 +267,36 @@ h3 {
 }
 
 #childBlock {
-    margin: auto;
+    width: 100%;
+    margin-bottom: 30px;
     grid-area: blockHome;
 }
 
 #childBlock1 {
-    margin: auto;
+    width: 100%;
+    margin-bottom: 30px;
     grid-area: blockHome1;
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     grid-area: footer;
     width: 100%;
-    margin: 0 auto;
-    background-color: rgb(75, 75, 75);
+    margin: 0px auto;
+    padding-top: 10px;
+    background-color: rgb(210, 210, 210);
 }
 
 footer p {
     line-height: 50px;
     height: 50px;
-    color: #fff;
+    color: black;
+    font-family: 'Space Mono', serif;
     text-align: center;
-
+    margin-bottom: 5px;
 }
 
 #insta {
@@ -349,6 +364,7 @@ input[type="text"], textarea {
 }
 input[type="submit"] {
     background-color: #4CAF50;
+    font-family: 'Space Mono', sans-serif;
     color: #fff;
     padding: 10px;
     border: none;
