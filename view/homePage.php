@@ -14,7 +14,7 @@
 include 'include/menuDarkMode.php';
     ?>
 <div id="tomBik">
-    <h1 data-value="TOM BIK">TOM BIK</h1>
+    <h1>TOM BIK</h1>
     <img id="photoHome" src="img/kisspng-web-development-web-developer-web-design-web-development-5afd66934ea449.9607081515265563073221.png" alt="">
     <h1>WEB DEVELOPER</h1>
 </div>

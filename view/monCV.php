@@ -9,12 +9,14 @@
     <title>Mon CV</title>
 </head>
 <body>
+<div id="gridmenu">
     <?php
 include 'include/menuDarkMode.php';
     ?>
-
+<h3>MON CV</h3>
     <?php
 include 'include/footer.php'
     ?>
+</div>
 </body>
 </html>

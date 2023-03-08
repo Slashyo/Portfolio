@@ -9,12 +9,14 @@
     <title>Tutoriels</title>
 </head>
 <body>
+<div id="gridmenu">
     <?php
 include 'include/menuDarkMode.php';
     ?>
-
+<h3>MES TUTORIELS</h3>
     <?php
 include 'include/footer.php'
     ?>
+</div>
 </body>
 </html>

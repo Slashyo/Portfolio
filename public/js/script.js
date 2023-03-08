@@ -11,7 +11,7 @@ const menuClose = document.querySelector('.menu-close');
 // Initialisation de l'état du mode sombre
 let isDarkMode = false;
 
-// Vérification si l'état du mode sombre existe déjà dans le localstorage
+// Vérification si le mode dark existe déjà dans le localstorage
 if (localStorage.getItem('isDarkMode') !== null) {
   isDarkMode = JSON.parse(localStorage.getItem('isDarkMode'));
   body.classList.toggle('dark-mode', isDarkMode);
@@ -54,36 +54,6 @@ if (menuClose) {
   });
 }
 
-/* Fonction pour le h1 de la page d'accueil */
-
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-let interval = null;
-
-document.querySelector("h1").onmouseover = event => {  
-  let iteration = 0;
-  
-  clearInterval(interval);
-  
-  interval = setInterval(() => {
-    event.target.innerText = event.target.innerText
-      .split("")
-      .map((letter, index) => {
-        if(index < iteration) {
-          return event.target.dataset.value[index];
-        }
-      
-        return letters[Math.floor(Math.random() * 26)]
-      })
-      .join("");
-    
-    if(iteration >= event.target.dataset.value.length){ 
-      clearInterval(interval);
-    }
-    
-    iteration += 1 / 3;
-  }, 30);
-}
 
 
 

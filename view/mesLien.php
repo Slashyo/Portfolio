@@ -9,12 +9,14 @@
     <title>Mes Liens</title>
 </head>
 <body>
+<div id="gridmenu">
     <?php
 include 'include/menuDarkMode.php';
     ?>
-
+<h3>MES LIENS</h3>
     <?php
 include 'include/footer.php'
     ?>
+</div>
 </body>
 </html>
