@@ -9,13 +9,13 @@ const menuClose = document.querySelector('.menu-close');
 /* Fonction pour le DARK MODE */
 
 // Initialisation de l'état du mode sombre
-let isDarkMode = false;
+let DarkMode = false;
 
-// Vérification si le mode dark existe déjà dans le localstorage
-if (localStorage.getItem('isDarkMode') !== null) {
-  isDarkMode = JSON.parse(localStorage.getItem('isDarkMode'));
-  body.classList.toggle('dark-mode', isDarkMode);
-  if (isDarkMode) {
+// Vérification si l'état du mode sombre existe déjà dans le localstorage
+if (localStorage.getItem('DarkMode') !== null) {
+  DarkMode = localStorage.getItem('DarkMode') === 'true';
+  body.classList.toggle('dark-mode', DarkMode);
+  if (DarkMode) {
     modeSwitch.classList.remove('dark-mode');
     modeSwitch.classList.add('light-mode');
   } else {
@@ -27,9 +27,9 @@ if (localStorage.getItem('isDarkMode') !== null) {
 // Fonction de commutation du mode sombre
 modeSwitch.addEventListener('click', function() {
   body.classList.toggle('dark-mode');
-  isDarkMode = body.classList.contains('dark-mode');
-  localStorage.setItem('isDarkMode', JSON.stringify(isDarkMode));
-  if (isDarkMode) {
+  DarkMode = body.classList.contains('dark-mode');
+  localStorage.setItem('DarkMode', DarkMode.toString());
+  if (DarkMode) {
     modeSwitch.classList.remove('dark-mode');
     modeSwitch.classList.add('light-mode');
   } else {

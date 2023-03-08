@@ -20,7 +20,6 @@
 /* Dark mode */
 
 body {
-    transition: background-color 0.3s ease;
     background-color: rgb(235, 235, 235);
 }
   
@@ -86,7 +85,7 @@ body.dark-mode p {
 }
 
 body.dark-mode footer {
-    background-color: rgba(0, 0, 0, 0.95);;
+    background-color: #121214;
     color: #fff;
 }
   
@@ -346,6 +345,22 @@ form {
     margin-left: 5%;
     margin-top: 30px;
     background-color: rgb(235, 235, 235);
+}
+
+#affichval{
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: lightgreen;
+}
+
+#afficherr{
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: red;
 }
 
 textarea{
