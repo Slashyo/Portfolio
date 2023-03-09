@@ -6,11 +6,12 @@
 #gridmenu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px repeat(4, auto);
+    grid-template-rows: 100px repeat(5, auto);
     grid-template-areas: 
             "menuNav menuNav menuNav darkMode"
             "titre titre titre titre"
             "tomBik tomBik tomBik tomBik"
+            "message message message message"
             "blockHome blockHome blockHome1 blockHome1"
             "footer footer footer footer"
 
@@ -350,18 +351,20 @@ form {
 }
 
 #affichval{
+    grid-area: message;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 15px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: lightgreen;
 }
 
 #afficherr{
+    grid-area: message;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 15px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: red;
 }
 

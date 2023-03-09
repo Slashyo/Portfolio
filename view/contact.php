@@ -15,8 +15,6 @@ include 'include/menuDarkMode.php';
     ?>
     <h3>CONTACTEZ MOI</h3>
 
-    <div id="affichval"><?=$afficheVal?></div>
-    <div id="afficherr"><?=$afficheErr?></div>
 <form action="#" method="POST">
 		<label for="nom">Nom</label>
 		<input type="text" id="nom" name="nom" placeholder="Votre nom" required>
@@ -37,6 +35,8 @@ include 'include/menuDarkMode.php';
     <h2>HEHEHEHE</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, mollitia ratione fugiat esse similique voluptatum! Dolorem error unde vero perferendis!</p>
 </div>
+<div id="affichval"><?=$afficheVal?></div>
+<div id="afficherr"><?=$afficheErr?></div>
     <?php
 include 'include/footer.php'
     ?>
