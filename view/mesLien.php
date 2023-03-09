@@ -14,6 +14,17 @@
 include 'include/menuDarkMode.php';
     ?>
 <h3>MES LIENS</h3>
+<?php
+// Affichage des liens
+foreach($afficheLien as $item):
+?>
+
+    <div class='liens'><?=$item['titre']?> <?=$item['description']?> 
+    <a href="<?=$item['url']?>" target="_blank"><img src="<?=$item['image']?>" width="100px" height="100px" alt=""></a>
+</div>
+<?php
+endforeach;
+?>
     <?php
 include 'include/footer.php'
     ?>

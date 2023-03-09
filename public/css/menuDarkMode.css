@@ -5,14 +5,14 @@
 
 #gridmenu {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px repeat(4, auto);
     grid-template-areas: 
-            "menuNav darkMode"
-            "titre titre"
-            "tomBik tomBik"
-            "blockHome blockHome1"
-            "footer footer"
+            "menuNav menuNav menuNav darkMode"
+            "titre titre titre titre"
+            "tomBik tomBik tomBik tomBik"
+            "blockHome blockHome blockHome1 blockHome1"
+            "footer footer footer footer"
 
     ;
 }
@@ -20,6 +20,7 @@
 /* Dark mode */
 
 body {
+    margin: 0;
     background-color: rgb(235, 235, 235);
 }
   
@@ -99,6 +100,8 @@ body.dark-mode footer {
     background-repeat: no-repeat;
     z-index: 100;
     transition: background-image 0.7s ease;
+    margin-right: 15px;
+    margin-top: 15px;
 }
   
 #mode-switch.dark-mode {
@@ -118,7 +121,6 @@ body.dark-mode footer {
     cursor: pointer;
     background-image: url('../img/astronomy_solar_galaxy_sun_space_star_universe_icon_156878.png');
 }
-
 
   /* Menu de navigation */
 
@@ -290,8 +292,8 @@ footer {
 }
 
 footer p {
-    line-height: 50px;
-    height: 50px;
+    line-height: 15px;
+    height: 100px;
     color: black;
     font-family: 'Space Mono', serif;
     text-align: center;
@@ -390,13 +392,26 @@ input[type="submit"] {
 /* RESPONSIVE POUR L'ENSEMBLE DE LA PAGE */ 
 
 @media screen and (min-width: 768px) {
+    #gridmenu {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 100px repeat(4, auto);
+        grid-template-areas: 
+                "menuNav menuNav menuNav darkMode"
+                "titre titre titre titre"
+                "tomBik tomBik tomBik tomBik"
+                "blockHome blockHome blockHome1 blockHome1"
+                "footer footer footer footer"
+    
+        ;
+    }
 
     .menu-toggle {
         display: none;
     }
   
     .menu {
-        
+        grid-area: menuNav;
         height: 110px;
         transform: none;
     }
@@ -421,18 +436,17 @@ input[type="submit"] {
     #mode-switch {
     z-index: 0;
     }
+
     #mode-switch.dark-mode {
-        
+        grid-area: darkMode;
         top: 17px;
-        grid-column: 2/3;
-        align-self: flex-end;
+
     }
 
     #mode-switch.light-mode {
-        
+        grid-area: darkMode;
         top: 17px;
-        grid-column: 2/3;
-        align-self: flex-end;
+
     }
 
     h1 {

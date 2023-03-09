@@ -17,8 +17,9 @@
     <li><a href="?page=cv">Mon CV</a></li>
     <li><a href="?page=contact">Contact</a></li>
     </ul>
+    <!-- "BOUTON" DARK MODE -->
 </div>
 </nav>
-
 <!-- "BOUTON" DARK MODE -->
 <a href="#" id="mode-switch" class="dark-mode"></a>
+

@@ -14,9 +14,9 @@
 include 'include/menuDarkMode.php';
     ?>
     <h3>CONTACTEZ MOI</h3>
-    <!-- ERREUR AVEC LE MESSAGE DE SUCCÈS DEMANDEZ A MIKA !
+
     <div id="affichval"><?=$afficheVal?></div>
-    <div id="afficherr"><?=$afficheErr?></div> -->
+    <div id="afficherr"><?=$afficheErr?></div>
 <form action="#" method="POST">
 		<label for="nom">Nom</label>
 		<input type="text" id="nom" name="nom" placeholder="Votre nom" required>
