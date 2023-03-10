@@ -248,6 +248,7 @@ h3 {
 }
 
 p {
+    font-family: 'Space Mono', monospace;
     text-align: center;
     width: 80%;
     margin: auto;
@@ -360,6 +361,8 @@ form {
 }
 
 #afficherr{
+    line-height: 75px;
+    justify-self: center;
     grid-area: message;
     font-weight: bolder;
     font-size: 15px;

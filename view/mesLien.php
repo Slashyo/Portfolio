@@ -18,9 +18,14 @@ include 'include/menuDarkMode.php';
 // Affichage des liens
 foreach($afficheLien as $item):
 ?>
+<div id="lienGlobal">
+    <div id='titre'><h4><?=$item['titre']?></h4></div>
 
-    <div class='liens'><?=$item['titre']?> <?=$item['description']?> 
-    <a href="<?=$item['url']?>" target="_blank"><img src="<?=$item['image']?>" width="100px" height="100px" alt=""></a>
+    <div id="description"><p><?=$item['description']?></p></div>
+
+    <div id="imageLien">
+    <a href="<?=$item['url']?>" target="_blank"><img src="<?=$item['image']?>" width="75px" height="auto" alt=""></a>
+    </div>
 </div>
 <?php
 endforeach;
