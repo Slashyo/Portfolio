@@ -324,7 +324,7 @@ form {
     align-items: center;
     padding: 30px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 0 10px #ccc;
     font-family: 'Roboto Mono', monospace;
     max-width: 100%;
@@ -335,6 +335,8 @@ form {
 }
 
 #affichval{
+    line-height: 75px;
+    justify-self: center;
     grid-area: message;
     font-weight: bolder;
     font-size: 15px;

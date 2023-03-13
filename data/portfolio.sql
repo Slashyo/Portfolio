@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3307
--- Généré le : jeu. 09 mars 2023 à 12:40
+-- Généré le : lun. 13 mars 2023 à 14:20
 -- Version du serveur : 10.6.5-MariaDB
 -- Version de PHP : 8.1.0
 
@@ -35,7 +35,16 @@ CREATE TABLE IF NOT EXISTS `contacts` (
   `message` text NOT NULL,
   `date` date NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `contacts`
+--
+
+INSERT INTO `contacts` (`id`, `nom`, `email`, `message`, `date`) VALUES
+(16, 'Jacques', 'francis.poutard@hotmail.fr', 'ehfrb)f', '2023-03-09'),
+(17, 'Jacques', 'francis.poutard@hotmail.fr', 'ehfrb)f', '2023-03-09'),
+(18, 'Jacques', 'francis.poutard@hotmail.fr', 'trtrrt', '2023-03-09');
 
 -- --------------------------------------------------------
 
@@ -61,9 +70,9 @@ CREATE TABLE IF NOT EXISTS `liens` (
 INSERT INTO `liens` (`id`, `titre`, `description`, `image`, `url`, `categorie`) VALUES
 (1, 'MDN Web Docs', 'MDN Web Docs, précédemment Mozilla Developer Network et anciennement Mozilla Developer Center, est un dépôt de documentation et une ressource d\'apprentissage pour les développeurs web utilisés par Mozilla, Microsoft, Google et Samsung.', 'https://cdn.mos.cms.futurecdn.net/aTdmzmFTab5SFem7xxSjjZ.jpg', 'https://developer.mozilla.org/fr/', 1),
 (2, 'PHP.net', 'PHP.net est le site regroupant toute la documentation officiel de PHP', 'https://www.php.net/images/meta-image.png', 'https://www.php.net/manual/fr/index.php', 1),
-(3, 'Openclassroom', 'Site proposant une offre variée de cours en ligne notamment sur le développement web. ', 'https://pedagogie.ac-lille.fr/numerique-et-sciences-informatiques/wp-content/uploads/sites/45/2021/10/logo-openclassroom.jpg', 'https://openclassrooms.com/fr/', 2),
+(3, 'Openclassroom', 'Site proposant une offre variée de cours en ligne notamment sur le développement web. ', 'https://upload.wikimedia.org/wikipedia/fr/0/0d/Logo_OpenClassrooms.png', 'https://openclassrooms.com/fr/', 2),
 (4, 'W3schools', 'Un site qui propose des formations et des informations sur les langages web.', 'https://yt3.googleusercontent.com/dW6to0x5Crmeh7yi-YPLcQRqVrBtx2BSh8eoKTJbE8NbjloQ0sqlmdszIlxokJU_97-ndOt_=s900-c-k-c0x00ffffff-no-rj', 'https://www.w3schools.com/', 1),
-(5, 'Grafikart', 'Grafikart est un site offrant des tutoriels et des vidéos en français sur les différents langages de programmation utilisés dans le web .', 'https://biolibre.fr/images/articles/grafikart.jpeg', 'https://grafikart.fr/', 2),
+(5, 'Grafikart', 'Grafikart est un site offrant des tutoriels et des vidéos en français sur les différents langages de programmation utilisés dans le web .', 'https://www.ledevweb.fr/images/grafikart.jpg', 'https://grafikart.fr/', 2),
 (7, 'Free code camp', 'freeCodeCamp est une organisation à but non lucratif qui se compose d\'une plate-forme Web d\'apprentissage interactive, d\'un forum communautaire en ligne, de salles de discussion, de publications en ligne et d\'organisations locales qui ont l\'intention d\'apprendre à développer des sites Web accessible à tous.', 'https://pbs.twimg.com/profile_images/1276770212927410176/qTgTIejk_400x400.jpg', 'https://www.freecodecamp.org/', 2),
 (8, 'Pierre Giraud', 'Pierre Giraud est un site qui propose des formations en ligne pour les développeurs débutants', 'https://www.pierre-giraud.com/wp-content/uploads/2020/04/cropped-logo512-pierre-giraud3-1.png', 'https://www.pierre-giraud.com/', 2),
 (9, 'Google Fonts', 'Google Fonts est un service d’hébergement gratuit de polices d’écritures pour le Web, démarré en 2010. Ces polices sont sous licences libres dont principalement la licence Apache et la SIL OFL.', 'https://k-graphiste.com/wp-content/uploads/2022/02/Google-font.jpg', 'https://fonts.google.com/', 4),
@@ -84,7 +93,15 @@ CREATE TABLE IF NOT EXISTS `travaux` (
   `image_url` varchar(255) NOT NULL,
   `url` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `travaux`
+--
+
+INSERT INTO `travaux` (`id`, `titre`, `description`, `image_url`, `url`) VALUES
+(1, 'Site Préformation', 'Ceci est mon premier \'site\' fait en préformation. Grace à ce projet vous pouvez voir mon évolution depuis le début de l\'année sur le côté responsive et tout le reste :)', 'img/Capture_d’écran_2023-03-13_112644.png', 'https://2022.webdev-cf2m.be/tom/'),
+(2, 'Site T.I2', 'Ceci est est le site de notre T.I2, dans ce site les consignes étaient de faire un formulaire responsive qui s\'envoi dans une base de donnée et affiche les information envoyées en dessous du formulaire quand le captcha est validé.', 'img/icone-livre-or-association-des-dessins-contre-les-bobos-768x768.png', 'http://2022.webdev-cf2m.be/tom/livredor/public/');
 
 -- --------------------------------------------------------
 

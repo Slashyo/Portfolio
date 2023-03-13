@@ -17,13 +17,13 @@ include 'include/menuDarkMode.php';
 
 <form action="#" method="POST">
 		<label for="nom">Nom</label>
-		<input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+		<input type="text" id="nom" name="nom" required>
 
 		<label for="email">Email</label>
-		<input type="text" id="email" name="email" placeholder="Votre adresse email" required>
+		<input type="text" id="email" name="email" required>
 
 		<label for="message">Message</label>
-		<textarea id="message" name="message" placeholder="Votre message" required></textarea>
+		<textarea id="message" name="message" required></textarea>
 
 		<input type="submit" value="Envoyer">
 </form>
