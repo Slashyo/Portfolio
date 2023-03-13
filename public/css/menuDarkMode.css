@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px repeat(5, auto);
+    gap: 20px;
     grid-template-areas: 
             "menuNav menuNav menuNav darkMode"
             "titre titre titre titre"
@@ -180,7 +181,7 @@ body.dark-mode footer {
   }
   
 .menu {
-    position: fixed;
+    position: absolute;
     text-align: center;
     top: 0;
     left: 0;

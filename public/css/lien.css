@@ -186,7 +186,7 @@ body.dark-mode .liens {
   }
   
 .menu {
-    position: fixed;
+    position: absolute;
     text-align: center;
     top: 0;
     left: 0;
@@ -333,8 +333,8 @@ html,body {
         grid-template-areas: 
                 "menuNav menuNav menuNav darkMode"
                 "titre titre titre titre"
-                "tomBik tomBik tomBik tomBik"
-                "blockHome blockHome blockHome1 blockHome1"
+                "liens liens liens liens"
+                "liens liens liens liens"
                 "footer footer footer footer"
     
         ;
