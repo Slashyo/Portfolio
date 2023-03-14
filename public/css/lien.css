@@ -186,7 +186,7 @@ body.dark-mode .liens {
   }
   
 .menu {
-    position: absolute;
+    position: fixed;
     text-align: center;
     top: 0;
     left: 0;
@@ -345,6 +345,7 @@ html,body {
     }
   
     .menu {
+        position: absolute;
         grid-area: menuNav;
         height: 110px;
         transform: none;

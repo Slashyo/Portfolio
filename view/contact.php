@@ -26,6 +26,8 @@ include 'include/menuDarkMode.php';
 		<textarea id="message" name="message" required></textarea>
 
 		<input type="submit" value="Envoyer">
+        <div id="affichval"><?=$afficheVal?></div>
+        <div id="afficherr"><?=$afficheErr?></div>
 </form>
 <div id="childBlock">
     <h2>HEHEHEHE</h2>
@@ -35,8 +37,7 @@ include 'include/menuDarkMode.php';
     <h2>HEHEHEHE</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, mollitia ratione fugiat esse similique voluptatum! Dolorem error unde vero perferendis!</p>
 </div>
-<div id="affichval"><?=$afficheVal?></div>
-<div id="afficherr"><?=$afficheErr?></div>
+
     <?php
 include 'include/footer.php'
     ?>

@@ -18,7 +18,7 @@ try{
 // POUR LES LIENS 
 
 // requête en variable texte contenant du MySQL
-$sqlLien = "SELECT `titre`, `description`, `image_url`, `url` FROM `travaux` ORDER BY `id` DESC; ";
+$sqlLien = "SELECT `titre`, `description`, `image_url`, `url` FROM `travaux` ORDER BY `id` ASC; ";
 
 // exécution de la requête avec un try / catch
 try {

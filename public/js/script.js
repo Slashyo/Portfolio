@@ -54,6 +54,21 @@ if (menuClose) {
   });
 }
 
+// Fonction pour les boites interactif 'TUTORIELS'
+
+function toggleText(event) {
+  var hiddenText = event.currentTarget.querySelector(".hidden");
+  if (hiddenText.style.display === "none") {
+    hiddenText.style.display = "block";
+  } else {
+    hiddenText.style.display = "none";
+  }
+}
+
+var containers = document.querySelectorAll(".container");
+for (var i = 0; i < containers.length; i++) {
+  containers[i].addEventListener('click', toggleText);
+}
 
 
 

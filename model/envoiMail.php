@@ -51,13 +51,13 @@ if(isset($_POST['nom'], $_POST['email'], $_POST['message'] )){
             mysqli_query($dbconnect,$sqlInsert);
             
 // DEMANDER A MIKKKKKKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-/*
+
             # envoi du mail
             $destinataire = 'tom.bik@hotmail.be'; // remplacer par l'adresse mail souhaitée
             $sujet = 'Nouveau message du formulaire de contact';
             $corps_message = "Nom: $nom\nEmail: $mail\nMessage: $message";
             mail($destinataire, $sujet, $corps_message);
-*/            
+            
             # si pas d'erreur création du texte
             $afficheVal ="Merci pour votre message !";
 
@@ -67,7 +67,7 @@ if(isset($_POST['nom'], $_POST['email'], $_POST['message'] )){
            # avec le code erreur SQL on peut faire des erreurs différentes, idem avec le $e->getMessage() etc...
             if($e->getCode()==1406){
                 # création de l'erreur
-                $afficheErr = "Un champs est trop long";
+                $afficheErr = "Le champ 'nom' est trop long";
 
             }elseif($e->getCode()==1062){
                 # création de l'erreur
