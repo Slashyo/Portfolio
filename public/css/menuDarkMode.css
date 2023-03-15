@@ -245,7 +245,7 @@ h3 {
     font-family: 'Space Mono', monospace;
     font-size: xx-large;
     grid-area: titre;
-    margin: auto auto 30px auto;
+    margin: 20px auto 30px auto;
 }
 
 p {
@@ -431,6 +431,16 @@ label {
         font-size: 22px;
     }
 
+    #childBlock {
+        width: 75%;
+        margin: auto;
+    }
+
+    #childBlock1 {
+        width: 75%;
+        margin: auto;
+    }
+
     #mode-switch {
     z-index: 0;
     }
@@ -445,6 +455,11 @@ label {
         grid-area: darkMode;
         top: 17px;
 
+    }
+
+    form {
+        margin-left: 15%;
+        margin-right: 15%;
     }
 
     h1 {
