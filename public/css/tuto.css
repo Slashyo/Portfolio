@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 /* Définition de la mise en page GRID pour le MENU / DARKMODE */
 
@@ -256,7 +257,7 @@ body.dark-mode .liens {
 }
   
 .menu ul li a {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Orbitron', sans-serif;
     color: #fff;
     font-size: 24px;
     text-decoration: none;
@@ -313,7 +314,7 @@ body.dark-mode .liens {
 
 h1 {
     text-align: center;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Orbitron', sans-serif;
     font-size: clamp(2rem, 6vw, 10rem);
     color: rgba(0, 0, 0, 0.8);
     padding: 0rem clamp(1rem, 2vw, 3rem);
@@ -330,8 +331,9 @@ h2 {
 
 h3 {
     text-align: center;
-    font-family: 'Space Mono', monospace;
-    font-size: xx-large;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    font-size: x-large;
     grid-area: titre;
     margin: auto;
     width: 90%;

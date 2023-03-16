@@ -15,17 +15,17 @@ include 'include/menuDarkMode.php';
     ?>
 <div id="tomBik">
     <h1>TOM BIK</h1>
-    <img id="photoHome" src="img/kisspng-web-development-web-developer-web-design-web-development-5afd66934ea449.9607081515265563073221.png" alt="">
+    <img id="photoHome" src="img/service-developpement-web.png" alt="">
     <h1>WEB DEVELOPER</h1>
 </div>
-
-<div id="childBlock">
-    <h2>popopo</h2>
-    <p>Bonjour moi c'est Alexandra et j'aime les chats</p>
+<div id="tomBikRes">
+    <h1>TOM BIK</h1>
+    <img id="photoHome1" src="img/service-developpement-web.png" alt="">
+    <h1>WEB DEVELOPER</h1>
 </div>
-<div id="childBlock1">
-    <h2>popopo</h2>
-    <p>Bonjour moi c'est Alexandra et j'aime les chats</p>
+<div id="childBlock">
+<hr>
+    <p>Je suis un jeune développeur web en formation, passionné par les technologies et les possibilités créatives que le développement web offre.</br></br>Actuellement, je suis en train de perfectionner mes compétences en matière de conception et de développement de sites web, en utilisant des technologies telles que HTML, CSS, JavaScript, PHP, SQL.</br></br>Mon désir d'apprendre et d'explorer de nouvelles idées m'anime constamment, tout en travaillant dur pour créer des sites web fonctionnels, intuitifs et esthétiquement plaisants.</br></br> Je suis confiant dans mes compétences et impatient de travailler avec des clients potentiels pour créer des solutions de développement web innovantes et personnalisées.</br></br> Mon portfolio est une vitrine de mes compétences et de mon expérience en matière de développement web, démontrant ma capacité à créer des sites web fonctionnels et esthétiquement agréables pour une variété de projets et de clients.</p>
 </div>
     <?php
 include 'include/footer.php'

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3307
--- Généré le : mer. 15 mars 2023 à 14:19
+-- Généré le : jeu. 16 mars 2023 à 12:44
 -- Version du serveur : 10.6.5-MariaDB
 -- Version de PHP : 8.1.0
 
@@ -84,7 +84,7 @@ CREATE TABLE IF NOT EXISTS `travaux` (
   `image_url` varchar(255) NOT NULL,
   `url` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `travaux`
@@ -92,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `travaux` (
 
 INSERT INTO `travaux` (`id`, `titre`, `description`, `image_url`, `url`) VALUES
 (1, 'Site Préformation', 'Ceci est mon premier \'site\' fait en préformation. Grace à ce projet vous pouvez voir mon évolution depuis le début de l\'année sur le côté responsive et tout le reste :)', 'img/Capture_d’écran_2023-03-13_112644.png', 'https://2022.webdev-cf2m.be/tom/'),
-(2, 'Site T.I2', 'Ceci est est le site de notre T.I2, dans ce site les consignes étaient de faire un formulaire responsive qui s\'envoi dans une base de donnée et affiche les information envoyées en dessous du formulaire quand le captcha est validé.', 'img/icone-livre-or-association-des-dessins-contre-les-bobos-768x768.png', 'http://2022.webdev-cf2m.be/tom/livredor/public/'),
+(4, 'Site T.I2', 'Ceci est le site de notre T.I2, dans ce site les consignes étaient de faire un formulaire responsive qui s\'envoi dans une base de donnée et affiche les information envoyées en dessous du formulaire quand le captcha est validé.', 'img/icone-livre-or-association-des-dessins-contre-les-bobos-768x768.png', 'http://2022.webdev-cf2m.be/tom/livredor/public/'),
 (3, 'Site Français', 'Ceci est le site pour notre projet en français avec toutes nos réalisations durant le cours de l\'année.', 'img/Capture2023-03-15.png', 'https://2022.webdev-cf2m.be/tom/francais/public/');
 
 -- --------------------------------------------------------

@@ -32,12 +32,7 @@ include 'include/menuDarkMode.php';
 <div id="childBlock">
     <h2>HEHEHEHE</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque labore minima debitis enim vitae, voluptas dicta ab aperiam rem! Et.</p>
-    </div>
-<div id="childBlock1">
-    <h2>HEHEHEHE</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, mollitia ratione fugiat esse similique voluptatum! Dolorem error unde vero perferendis!</p>
 </div>
-
     <?php
 include 'include/footer.php'
     ?>
