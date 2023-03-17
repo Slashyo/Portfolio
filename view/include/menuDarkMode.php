@@ -16,6 +16,7 @@
     <li><a href="?page=tuto">Tutoriels</a></li>
     <li><a href="?page=cv">Mon CV</a></li>
     <li><a href="?page=contact">Contact</a></li>
+    <li><a href="">ADMIN</a></li>
     </ul>
     <!-- "BOUTON" DARK MODE -->
 </div>

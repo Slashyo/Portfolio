@@ -8,12 +8,15 @@
 #gridmenu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px repeat(5, auto);
+    grid-template-rows: 100px repeat(7, auto);
     grid-template-areas: 
             "menuNav menuNav menuNav darkMode"
             "titre titre titre titre"
             "tomBik tomBik tomBik tomBik"
+            "first first first first"
             "message message message message"
+            "blockHome2 blockHome2 blockHome2 blockHome2"
+            "deux deux deux deux"
             "blockHome blockHome blockHome blockHome"
             "footer footer footer footer"
 
@@ -220,7 +223,7 @@ body.dark-mode footer {
 .menu ul li a {
     font-family: 'Orbitron', sans-serif;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -259,11 +262,6 @@ p {
     top: 0;
 }
 
-hr {
-    width: 85%;
-    margin-bottom: 30px;
-}
-
 
 #photoHome {
     display: block;
@@ -278,12 +276,28 @@ hr {
 }
 
 #childBlock {
-    width: 100%;
-    margin-bottom: 30px;
     grid-area: blockHome;
 }
 
-#childBlock p {
+#childBlock img {
+    display: block;
+    margin: auto auto 25px auto;
+    height: auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#childBlock1 {
+    display: none;
+}
+
+#childBlock2 {
+    width: 90%;
+    margin: auto auto 30px auto;
+    grid-area: blockHome2;
+}
+
+#childBlock2 p {
     letter-spacing: 1.5px;
     font-family: 'Orbitron', sans-serif;
 }
@@ -399,6 +413,18 @@ label {
     display: none;
 }
 
+#first {
+    grid-area: first;
+    width: 85%;
+    margin-bottom: 30px;
+}
+
+#deux {
+    grid-area: deux;
+    width: 85%;
+    margin-bottom: 15px;
+}
+
 /* RESPONSIVE POUR L'ENSEMBLE DE LA PAGE */ 
 
 @media screen and (min-width: 768px) {
@@ -406,12 +432,15 @@ label {
         display: grid;
         gap: initial;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 100px repeat(4, auto);
+        grid-template-rows: 100px repeat(7, auto);
         grid-template-areas: 
                 "menuNav menuNav menuNav darkMode"
                 "titre titre titre titre"
                 "tomBik tomBik tomBik tomBik"
-                "blockHome blockHome blockHome blockHome"
+                "first first first first"
+                "blockHome2 blockHome2 blockHome2 blockHome2"
+                "deux deux deux deux"
+                "blockHome blockHome blockHome1 blockHome1"
                 "footer footer footer footer"
     
         ;
@@ -446,8 +475,37 @@ label {
     }
 
     #childBlock {
+        display: block;
         width: 85%;
-        margin: 10px auto 30px auto;
+        margin: 0 auto 30px auto;
+    }
+
+    #childBlock img {
+        width: 100%;
+    }
+
+    #childBlock1 {
+        grid-area: blockHome1;
+        display: block;
+        width: 85%;
+        margin: 0 auto 30px auto;
+    }
+
+    #childBlock1 img {
+        display: block;
+        margin: auto auto 25px auto;
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #childBlock2 {
+        max-width: 85%;
+        margin: auto;
+    }
+
+    #deux {
+        margin-top: 30px;
     }
 
     #mode-switch {
@@ -508,5 +566,9 @@ label {
     footer {
         position: static;
     }
+  }
+
+  @media screen and (min-width: 1497px) {
+    
   }
 
