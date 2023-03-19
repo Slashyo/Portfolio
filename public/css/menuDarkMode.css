@@ -281,7 +281,7 @@ p {
 
 #childBlock img {
     display: block;
-    margin: auto auto 25px auto;
+    margin: auto auto 40px auto;
     height: auto;
     width: 80%;
     border-radius: 10px;
@@ -310,14 +310,16 @@ footer {
     grid-area: footer;
     width: 100%;
     margin: 0px auto;
-    height: 100px;
-    padding-top: 10px;
+    height: 90px;
+    line-height: 90px;
     background-color: rgb(210, 210, 210);
 }
 
 footer p {
     color: black;
-    font-family: 'Space Mono', serif;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -337,7 +339,6 @@ html,body {
 }
 
 /* STYLE POUR LA PAGE CONTACT */
-
 form {
     grid-area: tomBik;
     display: flex;
@@ -348,6 +349,7 @@ form {
     border-radius: 15px;
     box-shadow: 0 0 10px #ccc;
     max-width: 100%;
+    margin-bottom: 50px;
     margin-right: 5%;
     margin-left: 5%;
     background-color: rgb(235, 235, 235);

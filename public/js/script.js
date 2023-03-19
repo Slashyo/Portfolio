@@ -56,19 +56,22 @@ if (menuClose) {
 
 // Fonction pour les boites interactif 'TUTORIELS'
 
-function toggleText(event) {
-  var hiddenText = event.currentTarget.querySelector(".hidden");
-  if (hiddenText.style.display === "none") {
-    hiddenText.style.display = "block";
-  } else {
-    hiddenText.style.display = "none";
-  }
-}
+const moreInfoLinks = document.querySelectorAll('.card .more-info');
 
-var containers = document.querySelectorAll(".container");
-for (var i = 0; i < containers.length; i++) {
-  containers[i].addEventListener('click', toggleText);
-}
+moreInfoLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const card = e.target.closest('.card');
+    if (card !== null) {
+      const extraInfo = card.querySelector('.extra-info');
+      if (extraInfo !== null) {
+        extraInfo.style.display = extraInfo.style.display === 'block' ? 'none' : 'block';
+        link.classList.toggle('clicked');
+      }
+    }
+  });
+});
+
 
 
 
