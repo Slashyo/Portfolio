@@ -41,26 +41,26 @@ body.dark-mode {
 /* DARK MODE POUR FORMULAIRE */
 
 body.dark-mode form {
-    border: 1px solid #2d3035;
-    box-shadow: 0 0 10px #646d79;
-    background-color: #3d434b;
+    border: 2px solid black;
+    background-color: #121214;
+    box-shadow: 0 0 10px #000000;
     color: #fff;
 }
 
 body.dark-mode form textarea {
     color: #fff;
     border: #2d3035;
-    background-color: #646d79;
+    background-color: #24272a;
 }
 
 body.dark-mode form input#email {
     color: #fff;
-    background-color: #646d79;
+    background-color: #24272a;
 }
 
 body.dark-mode form input#nom {
     color: #fff;
-    background-color: #646d79;
+    background-color: #24272a;
 }
 
 body.dark-mode form ::placeholder {
@@ -349,7 +349,7 @@ form {
     border-radius: 15px;
     box-shadow: 0 0 10px #ccc;
     max-width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     margin-right: 5%;
     margin-left: 5%;
     background-color: rgb(235, 235, 235);
