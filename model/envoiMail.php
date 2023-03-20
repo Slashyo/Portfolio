@@ -65,8 +65,28 @@ if(isset($_POST['nom'], $_POST['email'], $_POST['message'] )){
             $headers = array(
                 'MIME-Version: 1.0',
                 'Content-type: text/html; charset=utf-8',
-                'From: Mon Site Web <noreply@monsite.com>',
+                'From: '.MAIL_FROM,
                 'Reply-To: '.$nom.' <'.$mail.'>',
+                'X-Mailer: PHP/'.phpversion()
+            );
+            $success = mail($destinataire, $sujet, $message_html, implode("\r\n", $headers));
+
+            # envoi du mail
+            $destinataire = $mail; // remplacer par l'adresse mail souhaitée
+            $sujet = 'Votre message a bien été envoyé';
+            $message_html = "
+                <html>
+                    <body>
+                        <p><strong>Nom :</strong> $nom</p>
+                        <p><strong>Email :</strong> $mail</p>
+                        <p><strong>Message :</strong> $message</p>
+                    </body>
+                </html>";
+            $headers = array(
+                'MIME-Version: 1.0',
+                'Content-type: text/html; charset=utf-8',
+                'From: '.MAIL_FROM,
+                'Reply-To: <'.MAIL_ADMIN.'>',
                 'X-Mailer: PHP/'.phpversion()
             );
             $success = mail($destinataire, $sujet, $message_html, implode("\r\n", $headers));
