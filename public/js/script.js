@@ -72,6 +72,32 @@ moreInfoLinks.forEach(link => {
   });
 });
 
+// Skills
+
+var skills = {
+  ht: 90,
+  jq: 50,
+  sk: 90,
+  ph: 75,
+  il: 20,
+  in: 85,
+  fl: 75
+};
+
+$.each(skills, function(key, value) {
+  var skillbar = $("." + key);
+
+  skillbar.animate(
+    {
+      width: value + "%"
+    },
+    3000,
+    function() {
+      $(".speech-bubble").fadeIn();
+    }
+  );
+}); 
+
 
 
 

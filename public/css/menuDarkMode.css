@@ -17,6 +17,8 @@
             "message message message message"
             "blockHome2 blockHome2 blockHome2 blockHome2"
             "deux deux deux deux"
+            "skills skills skills skills"
+            "trois trois trois trois"
             "blockHome blockHome blockHome blockHome"
             "footer footer footer footer"
 
@@ -427,11 +429,17 @@ label {
     margin-bottom: 15px;
 }
 
+#trois {
+    grid-area: trois;
+    width: 85%;
+    margin-bottom: 15px;
+}
+
 
 
 /* RESPONSIVE POUR L'ENSEMBLE DE LA PAGE */ 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     #gridmenu {
         display: grid;
         gap: initial;
@@ -444,6 +452,8 @@ label {
                 "first first first first"
                 "blockHome2 blockHome2 blockHome2 blockHome2"
                 "deux deux deux deux"
+                "skills skills skills skills"
+                "trois trois trois trois "
                 "blockHome blockHome blockHome1 blockHome1"
                 "footer footer footer footer"
     
