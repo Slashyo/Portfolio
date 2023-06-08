@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.container {
+    grid-area: skills;
+    position: relative;
+    bottom: 30px;
+  /*
+  background-color: rgb(210, 210, 210);
+  */
+}
+
+.title-skills {
+  font-size: 2em;
+  margin-top: 4em;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  transition: all 400ms ease-in-out;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.bar {
+  width: 80%;
+  margin: 2em auto;
+}
+
+.skill {
+  font-size: .8em;
+  text-transform: uppercase;
+  margin-bottom: 0.25em;
+}
+
+.speech-bubble {
+  font-size: 0.75em;
+  line-height: 2em;
+  position: absolute;
+  top: -2.7em;
+  text-align: center;
+  min-width: 3em;
+  border-radius: 0.3em;
+  display: none;
+}
+
+.html,
+.fluent {
+  left: calc(90% - 1.5em);
+}
+
+.photo {
+  left: calc(75% - 1.5em);
+}
+
+.jquery {
+  left: calc(50% - 1.5em);
+}
+
+.sketch,
+.illustrator {
+  left: calc(20% - 1.5em);
+}
+
+.indesign {
+  left: calc(85% - 1.5em);
+}
+
+.speech-bubble:after {
+  border: 0.5em solid transparent;
+  content: "";
+  margin-left: -0.5em;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+.bar-outer {
+  height: 1.25em;
+  background: #EEEEEE;
+  position: relative;
+  border-radius: 0.3em;
+}
+
+.bar-inner {
+  width: 0;
+  height: 1.25em;
+  border-radius: 0.3em;
+}
+
+.ht, .html {
+  font-weight: bolder;
+  color: aliceblue;
+  background: #263037;
+}
+
+.html:after {
+  border-top-color: #263037;
+}
+
+.jq, .jquery {
+  font-weight: bolder;
+  color: aliceblue;
+  background: #2f4d61;
+}
+
+.jquery:after {
+  border-top-color: #2f4d61;
+}
+
+.sk, .sketch {
+  background: #fbc9c4;
+}
+
+.sketch:after {
+  border-top-color: #fbc9c4;
+}
+
+.ph, .photo {
+  font-weight: bolder;
+  color: aliceblue;
+  background: #2c6580;
+}
+
+.photo:after {
+  border-top-color: #2c6580;
+}
+
+.il, .illustrator {
+  font-weight: bolder;
+  color: aliceblue;
+  background: #56a4ba
+  ;
+}
+
+.illustrator:after {
+  border-top-color: #56a4ba;
+}
+
+.in, .indesign {
+  font-weight: bolder;
+  color: aliceblue;
+  background: #87bfcb;
+}
+
+.indesign:after {
+  border-top-color: #87bfcb;
+}
+
+.fl, .fluent {
+  background: #f6877c;
+}
+
+.fluent:after {
+  border-top-color: #f6877c;
+}
