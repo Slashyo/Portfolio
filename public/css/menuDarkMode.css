@@ -9,18 +9,18 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px repeat(7, auto);
-    grid-template-areas: 
-            "menuNav menuNav menuNav darkMode"
-            "titre titre titre titre"
-            "tomBik tomBik tomBik tomBik"
-            "first first first first"
-            "message message message message"
-            "blockHome2 blockHome2 blockHome2 blockHome2"
-            "deux deux deux deux"
-            "skills skills skills skills"
-            "trois trois trois trois"
-            "blockHome blockHome blockHome blockHome"
-            "footer footer footer footer"
+    grid-template-areas:
+        "menuNav menuNav menuNav darkMode"
+        "titre titre titre titre"
+        "tomBik tomBik tomBik tomBik"
+        "first first first first"
+        "message message message message"
+        "blockHome2 blockHome2 blockHome2 blockHome2"
+        "deux deux deux deux"
+        "skills skills skills skills"
+        "trois trois trois trois"
+        "blockHome blockHome blockHome blockHome"
+        "footer footer footer footer"
 
     ;
 }
@@ -31,11 +31,11 @@ body {
     margin: 0;
     background-color: rgb(235, 235, 235);
 }
-  
+
 body.light-mode {
     background-color: white;
 }
-  
+
 body.dark-mode {
     background-color: #24272a;
 }
@@ -69,14 +69,15 @@ body.dark-mode form ::placeholder {
     color: #fff;
 }
 
-body.dark-mode form input[type="text"], textarea {
+body.dark-mode form input[type="text"],
+textarea {
     border: #2d3035;
 }
- 
+
 body.dark-mode img.open-icon {
     color: #fff;
 }
-  
+
 body.dark-mode h1 {
     color: white;
 }
@@ -88,7 +89,7 @@ body.dark-mode h2 {
 body.dark-mode h3 {
     color: white;
 }
-  
+
 body.dark-mode p {
     color: white;
 }
@@ -97,7 +98,7 @@ body.dark-mode footer {
     background-color: #121214;
     color: #fff;
 }
-  
+
 #mode-switch {
     justify-self: right;
     align-self: center;
@@ -107,13 +108,13 @@ body.dark-mode footer {
     background-position: center;
     background-repeat: no-repeat;
     z-index: 100;
-/*
+    /*
     transition: background-image 0.7s ease;
 */
     margin-right: 15px;
     margin-top: 15px;
 }
-  
+
 #mode-switch.dark-mode {
     grid-area: darkMode;
 
@@ -122,7 +123,7 @@ body.dark-mode footer {
     cursor: pointer;
     background-image: url('../img/moon_stars_night_midnight_sky_icon_194278.png');
 }
-  
+
 #mode-switch.light-mode {
     grid-area: darkMode;
 
@@ -131,9 +132,10 @@ body.dark-mode footer {
     cursor: pointer;
     background-image: url('../img/astronomy_solar_galaxy_sun_space_star_universe_icon_156878.png');
 }
-  /* Menu de navigation */
 
-  
+/* Menu de navigation */
+
+
 .menu-toggle {
     position: absolute;
     grid-area: menuNav;
@@ -142,14 +144,14 @@ body.dark-mode footer {
     left: 20px;
     cursor: pointer;
 }
-  
+
 .menu-toggle img {
     grid-area: menuNav;
     width: 75px;
     height: 75px;
     transition: transform 0.3s ease-in-out;
 }
-  
+
 .menu-toggle .close-icon {
     width: 70px;
     height: auto;
@@ -160,33 +162,35 @@ body.dark-mode footer {
 .menu-toggle .open-icon {
     animation: icon-rotate-interieur 0.7s ease forwards;
 }
-  
+
 .menu-toggle.open .open-icon {
     display: none;
 }
-  
+
 .menu-toggle.open .close-icon {
     display: block;
 }
 
 @keyframes icon-rotate-interieur {
     from {
-      transform: rotate(180deg);
+        transform: rotate(180deg);
     }
+
     to {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  }
-  
-  @keyframes icon-rotate-exterieur {
+}
+
+@keyframes icon-rotate-exterieur {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-      transform: rotate(180deg);
+        transform: rotate(180deg);
     }
-  }
-  
+}
+
 .menu {
     position: fixed;
     text-align: center;
@@ -200,7 +204,7 @@ body.dark-mode footer {
     transform: translateX(-100%);
     transition: transform 1s ease-in-out;
 }
-  
+
 .menu.show {
     transform: translateX(0);
     background-color: rgba(0, 0, 0, 0.95);
@@ -217,11 +221,11 @@ body.dark-mode footer {
     transform: translate(-50%, -50%);
     text-align: center;
 }
-  
+
 .menu ul li {
     margin: 20px 0;
 }
-  
+
 .menu ul li a {
     font-family: 'Orbitron', sans-serif;
     color: #fff;
@@ -238,7 +242,7 @@ h1 {
     padding: 0rem clamp(1rem, 2vw, 3rem);
     border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
-  
+
 h1:hover {
     color: rgb(200, 200, 200);
 }
@@ -328,16 +332,15 @@ footer p {
 
 /* Curseur sur toute la page */
 
-html,body {
-    /* CURSEUR POUR L'ENSEMBLE DE LA PAGE
+html,
+body {
+    /* CURSEUR POUR L'ENSEMBLE DE LA PAGE*/
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" style="font-size:40px"><text y="40">🐭</text></svg>'), auto !important;
-    */
-  }
+}
 
-  .menu-toggle,
-  a {
+.menu-toggle,
+a {
     cursor: pointer;
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" style="font-size:40px"><text y="40">🔍</text></svg>'), auto !important;
 }
 
 /* STYLE POUR LA PAGE CONTACT */
@@ -357,7 +360,7 @@ form {
     background-color: rgb(235, 235, 235);
 }
 
-#affichval{
+#affichval {
     line-height: 30px;
     height: 5px;
     justify-self: center;
@@ -370,7 +373,7 @@ form {
     color: #4CAF50;
 }
 
-#afficherr{
+#afficherr {
     line-height: 30px;
     height: 5px;
     justify-self: center;
@@ -383,11 +386,12 @@ form {
     color: red;
 }
 
-textarea{
+textarea {
     height: 100px;
 }
 
-input[type="text"], textarea {
+input[type="text"],
+textarea {
     text-align: center;
     padding: 10px;
     margin: 10px 0;
@@ -398,6 +402,7 @@ input[type="text"], textarea {
     width: 100%;
     box-sizing: border-box;
 }
+
 input[type="submit"] {
     background-color: #4CAF50;
     font-family: 'Orbitron', sans-serif;
@@ -437,7 +442,7 @@ label {
 
 
 
-/* RESPONSIVE POUR L'ENSEMBLE DE LA PAGE */ 
+/* RESPONSIVE POUR L'ENSEMBLE DE LA PAGE */
 
 @media screen and (min-width: 1200px) {
     #gridmenu {
@@ -445,32 +450,32 @@ label {
         gap: initial;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 100px repeat(7, auto);
-        grid-template-areas: 
-                "menuNav menuNav menuNav darkMode"
-                "titre titre titre titre"
-                "tomBik tomBik tomBik tomBik"
-                "first first first first"
-                "blockHome2 blockHome2 blockHome2 blockHome2"
-                "deux deux deux deux"
-                "skills skills skills skills"
-                "trois trois trois trois "
-                "blockHome blockHome blockHome1 blockHome1"
-                "footer footer footer footer"
-    
+        grid-template-areas:
+            "menuNav menuNav menuNav darkMode"
+            "titre titre titre titre"
+            "tomBik tomBik tomBik tomBik"
+            "first first first first"
+            "blockHome2 blockHome2 blockHome2 blockHome2"
+            "deux deux deux deux"
+            "skills skills skills skills"
+            "trois trois trois trois "
+            "blockHome blockHome blockHome1 blockHome1"
+            "footer footer footer footer"
+
         ;
     }
 
     .menu-toggle {
         display: none;
     }
-  
+
     .menu {
         position: absolute;
         grid-area: menuNav;
         height: 110px;
         transform: none;
     }
-  
+
     .menu ul {
         margin: 0;
         padding: 0;
@@ -479,11 +484,11 @@ label {
         align-items: center;
         width: 100%;
     }
-  
+
     .menu ul li {
         margin: 20px;
     }
-  
+
     .menu ul li a {
         font-size: 22px;
     }
@@ -580,9 +585,6 @@ label {
     footer {
         position: static;
     }
-  }
+}
 
-  @media screen and (min-width: 1497px) {
-    
-  }
-
+@media screen and (min-width: 1497px) {}
